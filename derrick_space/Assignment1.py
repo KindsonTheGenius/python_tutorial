@@ -4,4 +4,4 @@ name = 'Derrick Nwaneti'
 print(f"My name is {name}")
 
 fun_fact = 'I graduated from Texas Tech University with my petroleum engineering degree and my minors in Mathematics'
-print(f"Hello, my name is {name} and I have a fun fact I want to share about myself.. {fun_fact}")
+print(f"Hello, my name is {name} and I have a fun fact I wantt to share about myself.. {fun_fact}")
