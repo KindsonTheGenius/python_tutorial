@@ -4,9 +4,14 @@ def say_hello():
     print("Hello World") # This is an output statement
     # Write two more output statements
 
-    name = 'Kindson Munonye'  # variable assignment
+    full_name = 'Kindson Munonye'  # variable assignment
 
-    print("My name is {name}") # String interpolation by using f before the string
+    first_name = 'Kindson'
+    last_name = "Munonye"
+
+    print(f"My name is {full_name}") # String interpolation by using f before the string
+
+    print("What is your name: ")
 
 if __name__ == "__main__":
     say_hello()
