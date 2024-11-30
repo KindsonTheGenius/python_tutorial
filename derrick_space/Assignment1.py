@@ -1,7 +1,12 @@
 # Assignment #1 - Writing simple python program that pushes text out
 
-name = 'Derrick Nwaneti'
-print(f"My name is {name}")
+full_name = 'Derrick Nwaneti'
+first_name = 'Derrick'
+last_name = 'Nwaneti'
+print(f"1. My name is {first_name}")
 
 fun_fact = 'I graduated from Texas Tech University with my petroleum engineering degree and my minors in Mathematics'
-print(f"Hello, my name is {name} and I have a fun fact I wantt to share about myself.. {fun_fact}")
+print(f"2. Hello, my name is {full_name} and I have a fun fact I want to share about myself.. {fun_fact}")
+
+print("What is your name?")
+# --------------------------------------------------------------------------------------------------------------------
