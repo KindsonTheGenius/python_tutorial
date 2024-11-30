@@ -4,7 +4,7 @@ def say_hello():
     print("Hello World") # This is an output statement
     # Write two more output statements
 
-    name = "Kindson Munonye" # variable assignment
+    name = 'Kindson Munonye'  # variable assignment
 
     print("My name is {name}") # String interpolation by using f before the string
 
