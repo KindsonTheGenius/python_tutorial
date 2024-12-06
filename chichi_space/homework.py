@@ -103,4 +103,17 @@ print(b)
 c = 1.0 + 10e20 - 1.0e20
 print(c)
 
+# Exercise 1.8
+#a - converts the float value and prints out 123.0
+#b - converts the float value and prints out 123.0
+#c - converts the float value and prints out 123.23
+#d - converts the float value and prints out 123
+#e - invalid literal for int() with base 10: '123.23'
+#f - converts the float value and prints out 123
+#g - converts the string value and prints out '12'
+#h - converts the string value and prints out '12.2'
+#i - converts the boolean value and prints out 'a' as True
+#j - converts the boolean value and prints out '0' as False
+#k - converts the boolean value and prints out 0.1 as True
+
 
