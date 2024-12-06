@@ -62,3 +62,37 @@ print(f'Hello, {name}!')
 # k - Converts value into boolean logic and prints out True
 
 
+# Exercise 2
+# 2.1
+# return range(0, 5) because it automatically sets the range from 0 to 5
+# for i in range(5) sets a range from 0 to 5. It won't output into the console
+# type(range(5)) gives you the class for range. The type function tells you what the class or data type is.
+
+# 2.2
+# a
+for i in range(101):
+    print(i)
+# b
+for j in range(101):
+    if(j % 7 == 0):
+        print(j)
+# c
+for k in range(1, 101):
+    if(k % 5 == 0) and (k % 3 != 0):
+        print(k)
+# d
+x = int(input("Enter a number: "))
+for l in range(2, 21):
+    if(x % l == 0) and (x != l):
+        print(l)
+# 2.3
+# a
+numbers = 0
+while(numbers != 101):
+    print(numbers)
+    numbers += 1
+val = 0
+while val != 101:
+    if val % 7 == 0:
+        print(val)
+        val += 1
