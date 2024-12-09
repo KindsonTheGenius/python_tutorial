@@ -74,21 +74,21 @@ for i in range(101):
     print(i)
 # b
 for j in range(101):
-    if(j % 7 == 0):
+    if (j % 7 == 0):
         print(j)
 # c
 for k in range(1, 101):
-    if(k % 5 == 0) and (k % 3 != 0):
+    if (k % 5 == 0) and (k % 3 != 0):
         print(k)
 # d
 x = int(input("Enter a number: "))
 for l in range(2, 21):
-    if(x % l == 0) and (x != l):
+    if (x % l == 0) and (x != l):
         print(l)
 # 2.3
 # a
 numbers = 0
-while(numbers != 101):
+while (numbers != 101):
     print(numbers)
     numbers += 1
 val = 0
