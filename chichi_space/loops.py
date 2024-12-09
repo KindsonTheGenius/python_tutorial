@@ -33,11 +33,12 @@ while (numbers != 101):
     numbers += 1
 
 #j - IndentationError: unindent does not match any outer indentation level
-numbers = 0
-while (numbers != 101):
-    if numbers % 7 == 0:
-        print(numbers)
-      numbers += 1
+val = 0
+while(val != 101):
+    if val % 7 == 0:
+        print( val)
+
+        val += 1
 
 
 
