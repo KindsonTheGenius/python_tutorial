@@ -25,5 +25,24 @@ for i in range(100):
     if i % 5 == 0 and i % 3 != 0:
         print(i)
 
+#Exercise 2.3
+#i - Console printed numbers 0 - 100 with a progressive sequence of +1
+numbers = 0
+while (numbers != 101):
+    print(numbers)
+    numbers += 1
+
+#j - IndentationError: unindent does not match any outer indentation level
+val = 0
+while(val != 101):
+    if val % 7 == 0:
+        print( val)
+
+        val += 1
+
+
+
+
+
 
 
