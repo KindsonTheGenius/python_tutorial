@@ -1,4 +1,4 @@
-# Exercise 1.1
+# Exercise 1.2
 a = 3 + 1
 print(a)
 
@@ -8,6 +8,5 @@ print(b)
 c = 2 ** 3
 print(c)
 
-d = "Hello world!"
+d = "Hello, world!"
 print(d)
-
