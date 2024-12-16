@@ -1,9 +1,12 @@
 # Loops
 
-n = 13
+# n = 13
 
-for i in range (n):
-    print("Welcome to Python")
+#for i in range (n):
+  #  print("Welcome to Python")
 
-if n > 10
-    print("Python conditions and loops are a peice of cake")
+i = 1
+while i < n:
+    print('Welcome to Python using while loop')
+    i = i +1
+
