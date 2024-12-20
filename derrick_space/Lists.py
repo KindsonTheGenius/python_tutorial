@@ -72,3 +72,9 @@ print("The max temperature is:", maximum_temperature)
 #Lowest temp print
 min_temperature = min(Temperatures)
 print("The minimum temperature is:", min_temperature)
+
+#7.9 Count occurances of element
+letters = ["a","b","c","a","b","a"]
+#count times letter A appears & print
+a_count = letters.count("a")
+print("Letter a appears this many times in the list:", a_count)
