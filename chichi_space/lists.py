@@ -51,19 +51,8 @@ colors[1] = 'yellow'
 print(colors)
 
 
-mylist = [2, 3, 4, 5, 2, 3, 4, 2]
-
-count = 0
-for i in mylist:
-    if i == 2:
-       count += 1
-print(count)
 
 
-mylist = ['a', 'b', 'c', 'a', 'b', 'a']
 
-count = 0
-for i in mylist:
-    if i == 'a':
-       count += 1
-print(count)
+
+
