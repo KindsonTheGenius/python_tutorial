@@ -1,21 +1,24 @@
-import todo_list
+from todo_list import display_menu, add_task, view_tasks, mark_task_complete, delete_task
 
 def main():
     while True:
-        display_menu()
-        choice = input("\nEnter your choice (1-6)")
-        if choice == "1":
-            add_task()
-        elif choice == "2":
-            view_task()
-        elif choice == "3":
-            mark_task_complete()
-        elif choice == "4":
-            delete_task()
-        elif choice == "5":
-            print("Exiting To-Do list. Goodbye!")
-            break
-        else:
-            print("Invalid choice.")
+        #try:
+            display_menu()
+            choice = input("\nEnter your choice (1-5): ")
+            if choice == "1":
+                add_task()
+            elif choice == "2":
+                view_tasks()
+            elif choice == "3":
+                mark_task_complete()
+            elif choice == "4":
+                delete_task()
+            elif choice == "5":
+                print("Exiting To-Do list. Goodbye!")
+                break
+            else:
+                print("Invalid choice.")
+        #except:
+            #print("Please enter a valid number")
 if __name__ == "__main__":
     main()
