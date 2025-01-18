@@ -1,0 +1,2 @@
+phrase = "Bum"
+print(phrase)
