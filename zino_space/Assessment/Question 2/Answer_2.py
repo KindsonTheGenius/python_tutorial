@@ -22,12 +22,12 @@ appointments = [
 
 # 1
 from datetime import datetime
-from zoneinfo import Zoneinfo
+import pytz
 
 for apt in appointments:
-    tz = Zoneinfo(appointments["timezone"])
-    apt["start"] = datetime.strptime(apt["start"], "%Y-%m-%d %H:%M").replace(tzinfo=tz)
-    apt["end"] = datetime.strptime(apt["end"], "%Y-%m-%d %H:%M").replace(tzinfo=tz)
+    tz = pytz.timezone(appointments["timezone"])
+    apt["start"] = tz.localize(datetime.strptime(apt["start"], "%Y-%m-%d %H:%M"))
+    apt["end"] = tz.localize(datetime.strptime(apt["end"], "%Y-%m-%d %H:%M"))
 
 for pt in appointments:
  print(f"{pt['title']}: {pt['start']} to {pt['end']}, {pt['timezone']}")
