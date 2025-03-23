@@ -22,12 +22,24 @@ appointments = [
 
 # 1
 from datetime import datetime
-import pytz
+from zoneinfo import ZoneInfo
 
 for apt in appointments:
-    tz = pytz.timezone(appointments["timezone"])
-    apt["start"] = tz.localize(datetime.strptime(apt["start"], "%Y-%m-%d %H:%M"))
-    apt["end"] = tz.localize(datetime.strptime(apt["end"], "%Y-%m-%d %H:%M"))
+    apt["start"] = datetime.strptime(apt["start"], "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo(apt["timezone"]))
+    apt["end"] = datetime.strptime(apt["end"], "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo(apt["timezone"]))
 
 for pt in appointments:
  print(f"{pt['title']}: {pt['start']} to {pt['end']}, {pt['timezone']}")
+
+def detect_overtime(time1, time2):
+ return time2 > time1
+
+start1 = datetime.strptime("2023-11-02 09:00", "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("UTC"))
+end1 = datetime.strptime("2023-11-02 09:30", "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("UTC"))
+a1 = start1 - end1
+start2 = datetime.strptime("2023-11-02 14:00", "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("UTC"))
+end2 = datetime.strptime("2023-11-02 15:00", "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("UTC"))
+a2 = start2 - end2
+
+result = detect_overtime(a1, a2)
+print(result)
