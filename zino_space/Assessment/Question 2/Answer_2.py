@@ -68,13 +68,6 @@ for appt in appointments:
 appointments_sorted = sorted(appointments, key=lambda x: x["start_utc"])  # Sort by UTC start
 overlapping_appointments = []
 
-for i in range(len(appointments_sorted)):
-    for j in range(i + 1, len(appointments_sorted)):
-        appt1 = appointments_sorted[i]
-        appt2 = appointments_sorted[j]
-        if detect_overtime(appt1["start_utc"], appt1["end_utc"], appt2["start_utc"], appt2["end_utc"]):
-            overlapping_appointments.append((appt1["title"], appt2["title"]))
-
 # 5. Print appointments sorted by UTC start
 print("\nSorted Appointments:")
 for appt in appointments_sorted:
@@ -94,10 +87,4 @@ for appt in appointments_sorted:
     print(f"Local End: {local_end}")
 
 # Print overlapping appointments
-if overlapping_appointments:
-    print("\nOverlapping Appointments:")
-    for pair in overlapping_appointments:
-        print(f"{pair[0]} overlaps with {pair[1]}")
-else:
-    print("\nNo overlapping appointments found.")
 
